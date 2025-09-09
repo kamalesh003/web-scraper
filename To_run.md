@@ -1,6 +1,12 @@
-#Basic Usage
-python app1.py --url https://example.com
+Here are different ways to run this web scraper from the command line:
 
+## Basic Usage
+```cmd
+python app1.py --url https://example.com
+```
+
+## Different Parameter Combinations
+```cmd
 # With custom depth and threads
 python app1.py --url https://example.com --depth 2 --threads 3
 
@@ -15,11 +21,14 @@ python app1.py --url https://example.com --data-file my_data.json --log-file my_
 
 # All options combined
 python app1.py --url https://example.com --depth 4 --threads 8 --delay 0.2 --no-trafilatura --no-robots --embeddings
-
-
+```
 
 ---
 
-Eg:
 
->python app1.py --url "https://www.geeksforgeeks.org/machine-learning/bagging-vs-boosting-in-machine-learning/" --depth 1 --embeddings --data-file my_data.json --embeddings-file my_embeddings.json
+## Eg:
+
+```cmd
+python app1.py --url "https://www.geeksforgeeks.org/machine-learning/bagging-vs-boosting-in-machine-learning/" --depth 1 --embeddings --data-file my_data.json --embeddings-file my_embeddings.json
+```
+
